@@ -3,7 +3,7 @@ import altair as alt
 import streamlit as st
 import time
 
-df = pd.read_json("data/dtm_julio_a.json")
+df = pd.read_json("dtm_julio_a.json")
 # Build an empty graph
 upper = alt.Chart(df).mark_line().encode(
   x=alt.X('periodo:T',axis=alt.Axis(title='Periodo')),
